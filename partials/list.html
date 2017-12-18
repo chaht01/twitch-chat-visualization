@@ -1,0 +1,44 @@
+<ul class="preview_list">
+    <li class="preview_wrapper" ng-repeat="item in videoList.list" ng-init="videoList.initVideo(item)">
+        <div class="preview_summary">
+            <div class="column_padding">
+                <div class="column_inner column_inner--left">
+                    <div class="preview__title">
+                        {{item.name}}
+                    </div>
+                    <div class="preview__feedChart">
+                        <svg id={{'preview_map_'+item.id}}></svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="preview_contents">
+            <div class="column_padding">
+                <div class="column_inner column_inner--right">
+                    <div class="preview__embed">
+                        <div class="preview__embed--wrapper">
+                            <div class="preview__embed--inner">
+                                <iframe
+                                        src={{videoList.trustSrc("http://player.twitch.tv/?video=v"+item.id+"&autoplay=false")}}
+                                        height="100%"
+                                        width="100%"
+                                        frameborder="0"
+                                        scrolling="no"
+                                        allowfullscreen="false">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail_btn_container">
+            <button class="detail_btn" ng-click="videoList.viewDetail(item)">View Detail</button>
+        </div>
+
+        <div class="preview_timeline">
+            <canvas id={{'preview_chart_'+item.id}}></canvas>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: #0f0f0f;
+  font-family: Montserrat,sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  display: flex;
+  padding: 2rem 2rem 1rem;
+  transition: all .5s;
+  width: 100%;
+  height: 100%; }
+
+.timeline {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  flex-shrink: 0; }
+  .timeline__resolution {
+    text-align: center;
+    color: #4A4D5A;
+    height: 1rem;
+    font-size: .9rem;
+    margin-bottom: -0.5rem;
+    vertical-align: bottom; }
+  .timeline__slider {
+    display: block;
+    height: 2rem;
+    width: 100%;
+    background: transparent; }
+  .timeline__chart {
+    position: relative;
+    display: block;
+    height: calc(100% - 0.5rem);
+    overflow: auto; }
+
+.tree {
+  position: relative;
+  flex: 1.6; }
+
+.embed {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 2; }
+  .embed__video {
+    position: relative;
+    flex-basis: 56%;
+    flex-grow: 0;
+    flex-shrink: 0; }
+    .embed__video #twitchVideo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+  .embed__chat {
+    flex-basis: 44%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+    background: #0f0f0f;
+    padding: 1rem 0;
+    overflow: auto; }
+
+.chatlog {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  color: #fff; }
+
+.category {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: .6rem;
+  height: 100%; }
+
+.keyword {
+  padding: .1rem .2rem;
+  border-radius: .2rem; }
+
+[type='range'] {
+  -webkit-appearance: none;
+  padding: 8px;
+  width: 100%; }
+  [type='range']:focus {
+    outline: 0; }
+    [type='range']:focus::-webkit-slider-runnable-track {
+      background: #565968; }
+    [type='range']:focus::-ms-fill-lower {
+      background: #4A4D5A; }
+    [type='range']:focus::-ms-fill-upper {
+      background: #565968; }
+  [type='range']::-webkit-slider-runnable-track {
+    cursor: pointer;
+    height: 5px;
+    transition: all .2s ease;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #4A4D5A;
+    border: 2px solid transparent;
+    border-radius: 5px; }
+  [type='range']::-webkit-slider-thumb {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), 0 0 4px rgba(13, 13, 13, 0.2);
+    background: #A992D2;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    -webkit-appearance: none;
+    margin-top: -7.5px; }
+  [type='range']::-moz-range-track {
+    cursor: pointer;
+    height: 5px;
+    transition: all .2s ease;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #4A4D5A;
+    border: 2px solid transparent;
+    border-radius: 5px; }
+  [type='range']::-moz-range-thumb {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), 0 0 4px rgba(13, 13, 13, 0.2);
+    background: #A992D2;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px; }
+  [type='range']::-ms-track {
+    cursor: pointer;
+    height: 5px;
+    transition: all .2s ease;
+    width: 100%;
+    background: transparent;
+    border-color: transparent;
+    border-width: 8px 0;
+    color: transparent; }
+  [type='range']::-ms-fill-lower {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #3e414c;
+    border: 2px solid transparent;
+    border-radius: 10px; }
+  [type='range']::-ms-fill-upper {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #4A4D5A;
+    border: 2px solid transparent;
+    border-radius: 10px; }
+  [type='range']::-ms-thumb {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), 0 0 4px rgba(13, 13, 13, 0.2);
+    background: #A992D2;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin-top: 0; }
+
+/*# sourceMappingURL=layout.css.map */
