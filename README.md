@@ -1,4 +1,4 @@
-# TWitch TV Chat log Visualization
+# Twitch TV Chat log Visualization
 
 As streaming service holds mainstream of media, analyzing viewer's behavior has many interesting features. Especially, this project focuses on chat log to observe group behavior to see video more interesting way.
 
